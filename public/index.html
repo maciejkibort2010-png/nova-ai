@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10131d">
+  <title>NOVA — Twój asystent AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo">✦</div><span>NOVA</span></div>
+      <button class="new-chat" id="newChat">＋ Nowa rozmowa</button>
+      <div class="side-label">TWÓJ ASYSTENT</div>
+      <div class="side-note">Rozmawiaj, pytaj i odkrywaj nowe rzeczy.</div>
+      <div class="sidebar-bottom"><span class="status-dot"></span> NOVA jest gotowa</div>
+    </aside>
+    <main class="main">
+      <header><button class="mobile-brand" id="mobileNew">✦ NOVA</button><div class="model">✦ <span>NOVA AI</span><small>Asystent konwersacyjny</small></div><div class="online"><i></i> Online</div></header>
+      <section class="conversation" id="conversation">
+        <div class="welcome" id="welcome">
+          <div class="hero-icon">✦</div>
+          <p class="eyebrow">TWÓJ OSOBISTY ASYSTENT</p>
+          <h1>Cześć! Jestem <span>NOVA.</span></h1>
+          <p class="intro">Miło Cię poznać. O czym dzisiaj porozmawiamy?</p>
+          <div class="suggestions">
+            <button data-prompt="Wyjaśnij mi coś ciekawego, czego prawdopodobnie nie wiem."><b>✧</b><span><strong>Ciekawostka</strong><small>Powiedz mi coś interesującego</small></span></button>
+            <button data-prompt="Pomóż mi zaplanować naukę na najbliższy tydzień."><b>▤</b><span><strong>Planowanie</strong><small>Uporządkuj moje zadania</small></span></button>
+            <button data-prompt="Naucz mnie czegoś nowego krok po kroku."><b>⌘</b><span><strong>Nauka</strong><small>Wytłumacz mi trudny temat</small></span></button>
+            <button data-prompt="Wymyśl kreatywny pomysł na dziś."><b>✳</b><span><strong>Kreatywność</strong><small>Wymyślmy coś razem</small></span></button>
+          </div>
+        </div>
+        <div class="messages" id="messages"></div>
+      </section>
+      <footer>
+        <form id="chatForm" class="composer">
+          <textarea id="prompt" rows="1" placeholder="Napisz wiadomość do NOVA..." aria-label="Wiadomość"></textarea>
+          <button id="send" type="submit" aria-label="Wyślij">↑</button>
+        </form>
+        <p class="disclaimer">NOVA może popełniać błędy. Ważne informacje zawsze sprawdzaj.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
